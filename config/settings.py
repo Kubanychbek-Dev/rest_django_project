@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'redis',
 
     #users apps
+    'users',
 ]
 
 MIDDLEWARE = [
