@@ -30,7 +30,7 @@ class Command(BaseCommand):
         moderator.save()
         print("The moderator created")
 
-        user = User.objects.create(
+        member = User.objects.create(
             email="johndoe@mail.com",
             first_name="John",
             last_name="Doe",
@@ -39,6 +39,6 @@ class Command(BaseCommand):
             is_active=True,
             is_superuser=False,
         )
-        user.set_password("user")
-        user.save()
+        member.set_password("user")
+        member.save()
         print("The user created")
