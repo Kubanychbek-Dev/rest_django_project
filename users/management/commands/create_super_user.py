@@ -34,7 +34,7 @@ class Command(BaseCommand):
             email="johndoe@mail.com",
             first_name="John",
             last_name="Doe",
-            role=UserRoles.USER,
+            role=UserRoles.MEMBER,
             is_staff=False,
             is_active=True,
             is_superuser=False,

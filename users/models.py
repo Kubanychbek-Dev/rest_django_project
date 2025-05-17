@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as gtl
 
 
 class UserRoles(models.TextChoices):
+    ADMIN = "admin", gtl("admin")
     MODERATOR = "moderator", gtl("moderator")
     MEMBER = "member", gtl("member")
 
