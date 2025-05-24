@@ -19,11 +19,11 @@ class UserCreateSerializer(serializers.ModelSerializer):
         model = User
         fields = ["email", "password"]
         validators = [
-            PasswordValidator(field="password")
+            PasswordValidator(field="password"),
         ]
 
         def create(self, validated_data):
-            user = User.objects.create_user(**validated_data)
+            user = User.objects.create(**validated_data)
             user.set_password(user.password)
             user.save()
             return user
