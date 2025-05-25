@@ -11,7 +11,7 @@ class UserRoles(models.TextChoices):
 
 class User(AbstractUser):
     username = None
-    email = models.EmailField(unique=True, verbose_name=gtl("Email"))
+    email = models.EmailField(unique=True, verbose_name=gtl("email"))
     role = models.CharField(max_length=14, choices=UserRoles.choices, default=UserRoles.MEMBER, verbose_name=gtl  ("Role"))
     first_name = models.CharField(max_length=40, verbose_name=gtl("First Name"), blank=True, null=True)
     last_name = models.CharField(max_length=40, verbose_name=gtl("Last Name"), blank=True, null=True)
