@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     #users apps
     'users',
+    'sections',
 ]
 
 MIDDLEWARE = [

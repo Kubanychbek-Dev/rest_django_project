@@ -41,6 +41,7 @@ urlpatterns = [
   # Base urls
     path('admin/', admin.site.urls),
     # App urls
+    path('', include('sections.urls', namespace='sections')),
     path('users/', include('users.urls', namespace='users')),
     # Documentation urls
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name="schema-json"),
